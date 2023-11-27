@@ -251,7 +251,7 @@ Visualization of the imputed datasets is shown through a plot looking at distrib
 
 #Perform multiple imputation (generating 5 imputed datasets)
 # Set a random seed for reproducibility
-project2<- project2[,-c(31,32,33)]
+project2<- project2[,-c(15,28,30,31,32,33)]
 trache_mice<- mice(project2, m = 5, print = FALSE, seed = 10)
 # Store each imputed data set
 trache_imputed<- list() 
