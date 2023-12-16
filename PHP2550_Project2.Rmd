@@ -1,5 +1,5 @@
 ---
-title: "PHP 2550 Project 2"
+title: " A Comprehensive Regression Analysis Approach into Investigating Predictive Models for Tracheostomy Outcomes"
 author: "Victoria Grase"
 date: "2023-11-12"
 output:
@@ -11,7 +11,6 @@ format: pdf
 ```{r,include=FALSE}
 library(knitr)
 library(kableExtra)
-library(Rfast)
 library(mvtnorm)
 library(glmnet)
 library(leaps)
@@ -22,6 +21,7 @@ library(tidyr)
 library(ggplot2)
 library(gtsummary)
 library(tidyverse)
+library(GGally)
 library(knitr)
 library(mice)
 library(naniar)
@@ -41,44 +41,48 @@ project2_codebook<-read_excel("C:/Users/CAU Student/Documents/GitHub/2550_Projec
 
 ## Abstract
 
-This study aims to develop predictive models for the composite outcome of tracheostomy, with a focus on guiding indication criteria and timing of tracheostomy placement. The analysis incorporates Lasso regression, logistic regression, backward stepwise regression, and multiple imputation, to enhance the accuracy and generalizability of the models. The complete dataset comprises diverse variables such as patient demographics, clinical indicators, and relevant medical history. The Lasso regression, known for its feature selection capability, is employed to identify the most influential predictors associated with tracheostomy. Logistic regression further refines the model by capturing the probability of tracheostomy occurrence based on the identified predictors. Backward stepwise regression aids in systematically refining the model by iteratively eliminating less impactful variables. Recognizing the challenges posed by missing data, multiple imputation techniques are implemented to handle incomplete information effectively. This involves creating imputed datasets, performing analyses on each, and viewing results to provide and compare between regressions a comprehensive and robust prediction model. The developed models aim to contribute valuable insights into the factors influencing the composite outcome of tracheostomy, providing a foundation for evidence-based decision-making in clinical settings. The combination of Lasso, logistic regression, backward stepwise regression, and multiple imputation techniques ensures a thorough  analysis of the dataset, offering a powerful tool for clinicians and researchers alike in understanding and predicting tracheostomy outcomes.
-
+This study endeavors to construct predictive models for the composite outcome of tracheostomy, with a specific emphasis on guiding indication criteria and optimal timing for tracheostomy placement. Leveraging various regression analysis techniques, including Lasso regression, logistic regression, and backward stepwise regression, the research aims to understand the intricate relationships among different variables influencing tracheostomy occurrences. Initial exploration of bivariate and univariate relationships reveals a class imbalance, prompting a meticulous approach to model development. The analysis encompasses a diverse dataset, encompassing patient demographics, clinical indicators, and relevant medical history. Lasso regression, renowned for its feature selection capability, is employed to identify the most influential predictors associated with tracheostomy. Logistic regression further refines the model by calculating the probability of tracheostomy occurrence based on the identified predictors. Addressing challenges posed by missing data, multiple imputation techniques are implemented to effectively handle incomplete information. This involves creating imputed datasets, conducting analyses on each, and comparing results to provide a comprehensive and robust prediction model. The developed models aim results show that logistic regression model seems to be the best predictor for tracheostomy placement timing. From the statistical analysis performed its certain measurements such as sensitivity, AUC, specificity, and observation of coefficients that further supports why logistic regression outperforms lasso. 
 
 
 ## Introduction
 
-The primary objective of this investigation is to construct a robust regression model tailored to predict the composite outcome of tracheostomy, thereby offering valuable guidance on the indication criteria and optimal timing for tracheostomy placement. A distinctive aspect of this model development lies in its focus on statistical variables collected at both 36 and 44 weeks of gestation, providing a comprehensive understanding of factors influencing the likelihood of tracheostomy. The variables of particular interest encompass birth-related factors such as weight, gestational age, the administration of prenatal steroids for lung development, maternal race, gender (acknowledging potential gender-based differences in outcomes), and the presence of chorioamnionitis, an infection of the amniotic fluid. Additionally, variables recorded at 36 and 44 weeks, including weight and the eventual need for tracheostomy, contribute crucial insights into the predictive dynamics.
+Bronchopulmonary Dysplasia (BPD) encompasses a spectrum of complications that affect premature infants, varying from mild to moderate and severe manifestations. This condition is intricately linked to the premature birth scenario, where infants are delivered before attaining the expected gestational maturity, leading to structural damage in their lungs. Each year, over 10,000 neonates experience the impact of severe Bronchopulmonary Dysplasia (sBPD), necessitating the reliance on ventilators to support lung function. Notably, 75% of these infants are discharged from medical facilities with ventilator support, administered through tracheostomy, ensuring continued assistance for daily living and the preservation of vital functions in the future.
+
+Despite tracheostomy being a prevalent surgical intervention providing support to patients with sBPD, it is not without inherent risks, particularly an elevated vulnerability to death and infection. Consequently, within clinical settings, the crucial need arises to differentiate among sBPD patients, identifying those who genuinely necessitate tracheostomy intervention. The primary objective of this investigation is to construct a robust regression model tailored to predict the composite outcome of tracheostomy and death, thereby offering valuable guidance on the indication criteria and optimal timing for tracheostomy placement. A distinctive aspect of this model development lies in its focus on statistical variables collected at both 36 and 44 weeks of gestation, providing a comprehensive understanding of factors influencing the likelihood of tracheostomy. The variables of particular interest encompass birth-related factors such as weight, gestational age, the administration of prenatal steroids for lung development, maternal race, gender (acknowledging potential gender-based differences in outcomes), and the presence of chorioamnionitis, an infection of the amniotic fluid. Additionally, variables recorded at 36 and 44 weeks, including weight and the eventual need for tracheostomy, contribute crucial insights into the predictive dynamics.
 
 In addition of this investigation, it is essential to include additional variables that contribute significantly to the predictive accuracy of the model. Factors such as the respiratory support level and the presence of pulmonary hypertension, known risk factors, are integral to capturing the complexity of tracheostomy outcomes. Furthermore, recognizing the diversity in medical practices across different centers, the variable of medical center becomes pivotal. Some medical centers serve as referral centers with specialized practices, often being academic tertiary centers. To look at these these distinctions, an approach is to incorporate the medical center as a categorical covariate in the model, considering it as an interaction term to account for center-specific patterns. Additionally, the inclusion of surfactant as a variable, a substance aiding in maintaining lung inflation and developing around 34 weeks, further refines the model's capacity to predict tracheostomy outcomes. The nature of these variables ensures that the regression model not only addresses the core predictors but also the complexity associated with medical practices, respiratory support, and additional risk factors important for the tracheostomy outcome prediction.
 
-The report gives detailed description and interpretation of four distinct models, namely lasso, binomial logistic, backward, and forward stepwise selection. These models serve as analytical models show relationships between the identified key variables and predictions for diverse subset of infants. This exploration extends to the application of a sensitivity analysis, leveraging various methods such as cross-validation, F-score, and Brier score. The sensitivity analysis aims to examine the robustness and reliability of the models in capturing variations of the data. The comprehensive evaluation gives an understanding of how different variables interplay in influencing the composite outcome of tracheostomy. And our analysis gives a recommendation for the best robust model of that would be best to use in real world examples by looking at completed data through imputation. This method offers meaningful insight into the intricate dynamics surrounding the indication criteria and timing of tracheostomy placement.
+The report gives detailed description and interpretation of two distinct models, lasso and binomial logistic. These models serve as analytical models show relationships between the identified key variables and predictions for diverse subset of infants. This exploration extends to the application of a sensitivity analysis, leveraging various methods such as cross-validation, F-score, and Brier score. The sensitivity analysis aims to examine the robustness and reliability of the models in capturing variations of the data. The comprehensive evaluation gives an understanding of how different variables interplay in influencing the composite outcome of tracheostomy. And our analysis gives a recommendation for the best robust model of that would be best to use in real world examples by looking at completed data through imputation. This method offers meaningful insight into the intricate dynamics surrounding the indication criteria and timing of tracheostomy placement.
 
 #### Re-formatting and Missing Data of Study
 
+
 First, my aim is to enhance the data integrity by reformatting it, addressing any outliers or missing values that could potentially introduce bias or skew the results. To achieve this, I applied factorization to variables including center, race, ethnicity, delivery method, prenatal steroid administration, chorioamnionitis, gender, and surfactant status. Additionally, ventilation support level and medication for pulmonary hypertension were factored at both 36 and 44 weeks to assess baseline characteristics concerning the binomial outcome of Tracheostomy. During this process, I identified and removed duplicate entries for a specific patient, ensuring the dataset's consistency. Furthermore, an outlier affecting gestational age was identified and subsequently excluded to maintain the statistical robustness of the analyses.
 
-Next, I looked at missing data patterns in variables across the dataset provided.. Among the variables examined, Inspired Oxygen at 44 weeks exhibits the highest degree of missingness, with 44.98% of the data absent, followed closely by Peak Inspiratory Pressure (p_delta.44) and infant weight at 44 weeks, both with a missingness rate of 44.98% and 44.78%, respectively. Similarly, Positive End Exploratory Pressure (peep_cm_h2o_modified.44), the binary variable indicating the administration of any surfactant (any_surf), and the modified ventilation support level at 44 weeks display substantial missing data, each at a rate exceeding 40%. Notably, Medication for Pulmonary Hypertension at 44 weeks (med_ph.44), Composite Prenatal Steroids (com_prenat_ster), and Positive End Exploratory Pressure at 36 weeks (p_delta.36) exhibit relatively lower missingness rates ranging from 12.45% to 19.38%.As you can see from the table there seems to be a lot of missing values for the 44 week time period. It's essential to acknowledge a limitation in the form of higher missing data for variables at 44 weeks compared to those at 36 weeks. This discrepancy can be attributed to discharges occurring between the 36 and 44 weeks, introducing challenges in data collection during this interval. This limitation underscores the need for careful consideration and potential adjustment for missing data when interpreting and generalizing the study's findings.
+Next, I looked at missing data patterns in variables across the dataset provided. Among the variables examined, Inspired Oxygen at 44 weeks exhibits the highest degree of missingness, with 44.98% of the data absent, followed closely by Peak Inspiratory Pressure (p_delta.44) and infant weight at 44 weeks, both with a missingness rate of 44.98% and 44.78%, respectively. Similarly, Positive End Exploratory Pressure (peep_cm_h2o_modified.44), the binary variable indicating the administration of any surfactant (any_surf), and the modified ventilation support level at 44 weeks display substantial missing data, each at a rate exceeding 40%. Notably, Medication for Pulmonary Hypertension at 44 weeks (med_ph.44), Composite Prenatal Steroids (com_prenat_ster), and Positive End Exploratory Pressure at 36 weeks (p_delta.36) exhibit relatively lower missingness rates ranging from 12.45% to 19.38%.As you can see from the table there seems to be a lot of missing values for the 44 week time period. It's essential to acknowledge a limitation in the form of higher missing data for variables at 44 weeks compared to those at 36 weeks. This discrepancy can be attributed to discharges occurring between the 36 and 44 weeks, introducing challenges in data collection during this interval. This limitation underscores the need for careful consideration and potential adjustment for missing data when interpreting and generalizing the study's findings.
 
 ```{r}
 # Find duplicate rows
 duplicates <- project2[duplicated(project2) | duplicated(project2, fromLast = TRUE), ]
 
 # Display duplicate rows
-print(duplicates)
+#print(duplicates)
 row_to_remove <-c(790,791,792)
 project2<-project2[-row_to_remove, ]
 
 #change numeric to factors
 project2[,c(2:4,9:15,17,21,23,27, 29:30)] <- lapply(project2[,c(2:4,9:15,17,21,23,27,29:30)], factor)
 
-overall_missing<-miss_var_summary(project2)
-print(overall_missing)
+overall_miss<-overall_missing<-miss_var_summary(project2)
+knitr::kable(overall_miss, caption = "Table 1: Variables Missing", col.names = c("Variable name", "# Missing", "% Missing"))
 
 #Look at missing data for each parent 
 pct_na_r <- rowSums(is.na(project2)) / ncol(project2) * 100
 row_na <- data.frame(record_id = project2$record_id, pct_na = pct_na_r)
 row_na <- row_na[row_na$pct_na > 35,] 
-print(row_na)
+#print(row_na)
+
+#Drop Race, Censored, and other variables forr multiple imputatation
 ```
 
 ### Study Characteristics and Population
@@ -98,7 +102,7 @@ project2<-project2%>% mutate(severity = case_when(
 # sum(is.na(project2$severity))
 
 baseline_char<-project2%>%
-  select(center, mat_race,mat_ethn,del_method,gender,sga, any_surf,Trach) %>%
+  select(center, mat_race,mat_ethn,del_method,gender,sga, any_surf,Trach,Death) %>%
   tbl_summary(missing = "no") %>%
   add_n(statistic = "{n_miss} ({p_miss}%)") %>%
   modify_header(n = "N Missing") %>%
@@ -196,7 +200,7 @@ table3<-project2 %>%
   
 tbl_butchered3<-table3%>%
   tbl_butcher()
-tbl_butchered3
+
 
 # average tracheostomy at discharge and death before discharge
 table4<-project2 %>%
@@ -227,6 +231,48 @@ tbl_butchered4<-table4%>%
   tbl_butcher()
 tbl_butchered4
 ```
+
+```{r}
+plt1<-ggpairs(project2 %>% select(weight_today.36,weight_today.44,blength,bw,ga)%>%na.omit(),
+lower = list(continuous = wrap("smooth", alpha = 0.7, size=0.5)))+
+theme_bw()
+plt1
+
+plt2<-ggpairs(project2 %>% select(weight_today.36,weight_today.44,p_delta.36,p_delta.44,peep_cm_h2o_modified.36,peep_cm_h2o_modified.44,hosp_dc_ga)%>%na.omit(),
+lower = list(continuous = wrap("smooth", alpha = 0.7, size=0.5)))+
+theme_bw()
+plt2
+
+
+
+
+
+```
+```{r}
+project2$center[project2$center == 21] = 20
+
+project2 %>%
+  group_by(center, Trach) %>%
+  summarise(count = n()) %>%
+  mutate(freq = count / sum(count)) %>%
+  ggplot(aes(x = center, y = freq, fill = as.factor(Trach))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(x = "Center", y = "Proportion", fill = "Outcome", title = "Proportion of Outcomes by Center") + 
+  theme_minimal()
+
+
+project2 %>%
+tbl_summary(include = -c(record_id, mat_ethn),
+by = center,
+missing = "no")%>%
+add_p() %>%
+as_kable_extra(booktabs = TRUE,
+caption = "Summary Statistics by Center") %>%
+kableExtra::kable_styling(font_size = 9,
+latex_options = c("repeat_header", "HOLD_position", "scale_down"))
+
+```
+
 Table 3 contains variables related to oxygen levels, pressure, and gestational age, comparing the overall cohort (N = 996) with subgroups based on tracheostomy placement (Trach 0, N = 850; Trach 1, N = 146). The Fraction of Inspired Oxygen (FiO2) at 36 weeks demonstrated a mean of 0.34 in the overall cohort, with a slight decrease in the tracheostomy group (0.32) and a notable increase in the FiO2 for infants with tracheostomy (0.49). Similarly, at 44 weeks, the FiO2 means remained consistent, but the tracheostomy group exhibited a slightly lower mean (0.44). For Peak Inspiratory Pressure at 36 and 44 weeks, the overall averages increased from 5 to 8 cmH2O, and 15 to 21 cmH2O, respectively. The tracheostomy group consistently demonstrated higher pressures at both time points compared to the non-tracheostomy group. Hospital Discharge Gestational Age showcased a mean of 53 weeks for the overall cohort, while the tracheostomy and non-tracheostomy groups had mean values of 49 and 80 weeks, respectively.
 
 
@@ -240,38 +286,76 @@ Table 5 provides a comprehensive overview of key factors related to tracheostomy
 \newpage
 
 ## Methods
-Initially, a subset of variables deemed critical for the analysis is selected and appropriately renaTo address missing values, the Multiple Imputation by Chained Equations (MICE) method is employed, generating five imputed datasets to ensure robustness and account for uncertainty in the imputation process. A random seed is set to enhance reproducibility. The imputed datasets are stored in a list for further analysis, and the mice::complete function is utilized to obtain the completed datasets for each imputation iteration. The entire imputation process is then saved as an RDS file to preserve the imputed datasets for future analyses.
+Initially, a carefully chosen subset of variables essential for the analysis is identified and renamed for clarity. To address missing values, the Multiple Imputation by Chained Equations (MICE) method is employed. This method involves generating five imputed datasets to ensure robustness and account for uncertainty in the imputation process. A strategic decision is made to split the data, excluding observations for the 44-week time point due to extensive missing data in each variable resulting from patient discharges between 36 and 44 weeks.
 
-Visualization of the imputed datasets is shown through a plot looking at distribution and patterns of imputed values. The imputation methods used can be inspected through the trache_mice\$method attribute. Finally, the imputed datasets are made into a dataframe named completed_data using the complete function, which aggregates the imputed values into a single dataset, ready for subsequent analyses. This imputation process is essential for ensuring a more robust and complete dataset, enhancing the reliability of statistical analyses and model building in which we will need for the following regression: lasso, logistic, forward, and backward.
+Afterwards, the imputation process focuses on the 36-week data, where each variable exhibits less than 20% missing values. To enhance reproducibility, a random seed is set. The imputed datasets are stored in a list for further analysis, and the mice::complete function is utilized to obtain the completed datasets for each imputation iteration. A visual representation of the imputed datasets is presented through a plot, offering insights into the distribution and patterns of imputed values. The imputation methods used are documented and can be inspected through the imp$method attribute. Ultimately, the imputed datasets are consolidated into a dataframe named "completed_data" using the complete function. This step aggregates the imputed values into a single dataset, ensuring readiness for subsequent analyses. The imputation process plays a crucial role in fortifying the dataset's completeness and reliability, laying a strong foundation for subsequent regression analyses, specifically lasso and logistic regression models.
 
 ```{r}
 # Select variables and rename
 # project2<- project2 %>% select(c(center,bw,ga,blength,birth_hc,del_method,prenat_ster,com_prenat_ster,mat_chorio,gender,sga,any_surf,weight_today.36,ventilation_support_level.36,inspired_oxygen.36,p_delta.36,peep_cm_h2o_modified.36, med_ph.36,weight_today.44, ventilation_support_level_modified.44,inspired_oxygen.44,p_delta.44,peep_cm_h2o_modified.44,med_ph.44,hosp_dc_ga,Trach))
 #Create imputation for variables at 44 weeks including weight, Fraction of Inspired Oxygen,Peak Inspiratory Pressur, Positive end exploratory pressure, 
-
-#Perform multiple imputation (generating 5 imputed datasets)
-# Set a random seed for reproducibility
-project2<- project2[,-c(15,28,30,31,32,33)]
-trache_mice<- mice(project2, m = 5, print = FALSE, seed = 10)
-# Store each imputed data set
-trache_imputed<- list() 
-for (i in 1:5){
-  trache_imputed[[i]]<-complete(trache_mice,i) 
-}
-#saveRDS(trache_mice,file="trache_mice_final_1.RDS")
-#trache_mice<- readRDS("trache_mice_final_1.RDS")
-#plot(trache_mice)
-#trache_mice$method
-#View the imputed datasets in the 
-completed_data<-complete(trache_mice)
+# 
+# #Perform multiple imputation (generating 5 imputed datasets)
+# # Set a random seed for reproducibility
+# project2<- project2[,-c(15,28,30,31,32,33)]
+# trache_mice<- mice(project2, m = 5, print = FALSE, seed = 10)
+# # Store each imputed data set
+# trache_imputed<- list() 
+# for (i in 1:5){
+#   trache_imputed[[i]]<-complete(trache_mice,i) 
+# }
+# #saveRDS(trache_mice,file="trache_mice_final_1.RDS")
+# #trache_mice<- readRDS("trache_mice_final_1.RDS")
+# #plot(trache_mice)
+# #trache_mice$method
+# #View the imputed datasets in the 
+# completed_data<-complete(trache_mice)
 #columns_to_remove <-c(30,31,32)
 #completed_data<-completed_data[,-columns_to_remove ]
 
 #overall_missing1<-miss_var_summary(completed_data)
 #overall_missing1
 
+# Subset the dataframe to only include the specified variables
+wk44<- c("inspired_oxygen.44", "p_delta.44", "weight_today.44",
+               "peep_cm_h2o_modified.44",
+               "ventilation_support_level_modified.44", "med_ph.44")
+
+week44vars<-project2[wk44]
+
+# Number of NAs in each row for the specified variables
+na_count_per_row <- rowSums(is.na(week44vars))
+
+
+project2$center[project2$center == 21] = 20
+
+# Keep rows where not all of the specified variables are NA
+wk36<-  project2 %>% dplyr::select(-c(wk44,mother_ethn,mother_race,hosp_dc_ga))
+project2 <- project2[na_count_per_row != ncol(week44vars), ]
+```
+
+```{r}
+mice_mod<- mice(project2, m = 5, meth = 'pmm', seed = 123)
+mice_mod_36<- mice(wk36, m = 5, meth = 'pmm', seed = 123)
+
+# List of Imputed Set
+p2_imp = vector("list",5)
+for (i in 1:5){
+  imp = complete(mice_mod,i)
+  p2_imp[[i]] = cbind(imp)
+}
+
+# 36 Week Data
+data_36 = vector("list",5)
+for (i in 1:5){
+  imp = complete(mice_mod_36,i)
+  data_36[[i]] = cbind(imp)
+}
+
 ```
 ### Model Descriptions
+The incorporation of the Lasso regularization in logistic regression adds a layer of sophistication to the modeling process. The Lasso's ability to induce sparsity in the model is particularly valuable in scenarios with a multitude of potential predictors. In the context of predicting tracheostomy placement, where various clinical, demographic, and physiological factors may influence the outcome, the Lasso helps in automatic variable selection. By shrinking some coefficients to exactly zero, it identifies the most influential predictors while disregarding less significant ones. This not only streamlines the model but also enhances its interpretability, providing clinicians with a focused set of factors that contribute significantly to the likelihood of tracheostomy placement in infants with BPD. Additionally, the Lasso's regularization properties aid in preventing overfitting, improving the model's generalizability to new data and making it a robust tool for predicting clinical outcomes in this medical context.
+
 The lasso model performs a 10-fold cross-validated lasso logistic regression. This function takes a dataset (df) as input and returns a list of lasso coefficients for two models: one without interactions and another with main interactions. Cross-validation to select the optimal regularization parameter (lambda) is included in this process. The dataset is preprocessed by removing the "death" variable and creating matrix forms for ordered and non-ordered variables.The code applies the function to five imputed datasets, obtaining lasso coefficients for both models (resulting coefficients are combined into two matrices). The average and variance of these coefficients are then calculated for each model.Finally, the code uses the obtained average coefficients to calculate lasso scores on a long-format imputed dataset. It then fits logistic regression models using the lasso scores and predicts probabilities for tracheostomy outcomes. The commented-out section provides an additional step for two-way interactions, which can be activated based on the analysis requirements.
 
 ```{r}
@@ -282,11 +366,11 @@ lasso <- function(df) {
  
    #grid range for lambda
   grid<- 10^ seq (10 , -2, length = 100)
-  df<- df[,c(-1,-30)] #remove death
+  df<- imp[,c(-1,-24)] #remove death
 
   # Matrix form for ordered variables
-  x.ord.2<- model.matrix(Trach~.^2, data =df)[,-c(29)]
-  x.ord <- model.matrix(Trach~., data = df)[,-c(29)]
+  x.ord.2<- model.matrix(Trach~.^2, data =df)[,-c(22)]
+  x.ord <- model.matrix(Trach~., data = df)[,-c(22)]
   y.ord <- df$Trach
 #   # Assuming you have a data frame or matrix named 'data'
 # # Subsample 'y' to match the number of rows in 'x'
@@ -318,13 +402,12 @@ lasso <- function(df) {
   return(lasso_models_coef)
 }
 
-#
 # Find average lasso coefficients ovetr imputed datasets
-lasso_coef1 <- lasso(trache_imputed[[1]])
-lasso_coef2 <- lasso(trache_imputed[[2]])
-lasso_coef3 <- lasso(trache_imputed[[3]])
-lasso_coef4 <- lasso(trache_imputed[[4]])
-lasso_coef5 <- lasso(trache_imputed[[5]])
+lasso_coef1 <- lasso(imp[[1]])
+lasso_coef2 <- lasso(imp[[2]])
+lasso_coef3 <- lasso(imp[[3]])
+lasso_coef4 <- lasso(imp[[4]])
+lasso_coef5 <- lasso(imp[[5]])
 
 lasso_coef_all1<- cbind(lasso_coef1[[1]], lasso_coef2[[1]], lasso_coef3[[1]],lasso_coef4[[1]], lasso_coef5[[1]])
 lasso_coef_all2<- cbind(lasso_coef1[[2]], lasso_coef2[[2]], lasso_coef3[[2]],lasso_coef4[[2]], lasso_coef5[[2]])
@@ -337,13 +420,14 @@ avg_coefs_lasso2<- apply(lasso_coef_all2, 1, mean)
 var_coefs_lasso2<- apply(lasso_coef_all2, 1, var)
 #
 # Find predicted probabilities on long imputed data (no rounding applied in this case!)
-trach_df_long<-complete(trache_mice,action="long")
-subset_long<- trach_df_long[,-c(1,2,3,32)]
+trach_df_long<-complete(mice_mod_36,action="long")
+subset_long<- trach_df_long[,-c(1,2,3,26)]
 x_vars <- model.matrix(Trach~. , subset_long)
 subset_long$lasso_score<- x_vars%*% (avg_coefs_lasso1)
 mod_lasso<- glm(Trach~lasso_score, data = subset_long, family = "binomial")
 predict_probs_lasso<- predict(mod_lasso, type="response")
-
+#
+#
 #for two way interactions
 # x_vars2<-model.matrix(Trach~(.)^2, subset_long[,-30])
 # subset_long$lasso_score2<- x_vars2 %*% (avg_coefs_lasso2)
@@ -351,38 +435,44 @@ predict_probs_lasso<- predict(mod_lasso, type="response")
 # predict_probs_lasso2 <- predict(mod_lasso2, type="response")
 ```
 
-The logistic function is designed to conduct binomial logistic regression on a given dataset (df) to predict the occurrence of a binary outcome variable (Trach). The function first preprocesses the data by removing any irrelevant variables, specifically excluding the variable representing death. It then generates a model matrix from the data, considering linear predictors. The logistic regression models are fitted using the glm  function with a binomial family. The coefficients of these models are extracted to understand the influence of the predictor variables on the probability of the binary outcome.The function returns a list containing the coefficients of both models and the fitted models themselves. This process is repeated for each imputed dataset, resulting in separate sets of coefficients for each dataset. The average coefficients and their variances are then calculated for a model with main interactions. Finally, the function applies the average coefficients to the long-format imputed data. The logistic model is then used to predict probabilities for the binary outcome 
+The choice of employing a logistic regression model for predicting tracheostomy placement in the context of Bronchopulmonary Dysplasia (BPD) is rooted in the specific characteristics of the dataset and the nature of the prediction task. Logistic regression is a well-suited statistical method for binary outcomes, making it particularly relevant for scenarios where we are interested in predicting the likelihood of an event occurring or not occurring. In this case, the binary outcome variable is tracheostomy placement (Trach), representing whether a patient requires this surgical intervention or not.
+
+The logistic function, commonly known as the sigmoid function, is the fundamental component of logistic regression. It transforms linear combinations of predictor variables into probabilities, with a range between 0 and 1. This aligns perfectly with the nature of binary outcomes, where the goal is to estimate the probability of an event happening. For the present analysis, the logistic regression model is applied to the dataset (df) to predict the occurrence of tracheostomy placement based on the given set of predictor variables.Careful consideration is given to the balance between model complexity and generalizability to ensure accurate predictions while avoiding overfitting to the specific characteristics of the training data.
+
+The function first preprocesses the data by removing any irrelevant variables, specifically excluding the variable representing death. It then generates a model matrix from the data, considering linear predictors. The logistic regression models are fitted using the glm  function with a binomial family. The coefficients of these models are extracted to understand the influence of the predictor variables on the probability of the binary outcome.The function returns a list containing the coefficients of both models and the fitted models themselves. This process is repeated for each imputed dataset, resulting in separate sets of coefficients for each dataset. The average coefficients and their variances are then calculated for a model with main interactions. Finally, the function applies the average coefficients to the long-format imputed data. The logistic model is then used to predict probabilities for the binary outcome.
 
 
 ```{r}
 #Binomial logistic regression
 logistic <- function(df) {
-  df<- df[,c(-1,-30)] #remove death
-
-  x.ord<-model.matrix(Trach~., data = df)[,-c(1)]
-  x.ord.2<-model.matrix(Trach~.^2, data =df)[,-c(1)]
-  y.ord<-df$Trach
-
-  # logistic model
-  logistic_mod<- glm(y.ord~x.ord, family = "binomial")
-  logistic_mod1<- glm(y.ord~x.ord.2, family = "binomial")
-
-  #Get coefficients
- coef1_log<- coef(logistic_mod)
- coef2_log<- coef(logistic_mod1)
-
-#return best model
-logstic_models_coef<- list()
-logistic_models_coef<- list(coef1_log, coef2_log, logistic_mod,logistic_mod1)
-return(logistic_models_coef)
+  # Assuming 'imp' is a data frame with columns, and you want to use 'df' instead of 'imp'
+  df <- imp[, -c(1, 24)]  # Remove columns 1 and 25
+  
+  # Create model matrices for linear and quadratic terms
+  x.ord <- model.matrix(Trach ~ ., data = df)[, -c(1)]      # Linear terms
+  x.ord.2 <- model.matrix(Trach ~ .^2, data = df)[, -c(1)]   # Quadratic terms
+  y.ord <- df$Trach
+  
+  # Fit logistic models
+  logistic_mod <- glm(y.ord ~ x.ord, family = "binomial")
+  logistic_mod1 <- glm(y.ord ~ x.ord.2, family = "binomial")
+  
+  # Get coefficients
+  coef1_log <- coef(logistic_mod)
+  coef2_log <- coef(logistic_mod1)
+  
+  # Return the models and coefficients
+  logistic_models_coef <- list(coef1_log, coef2_log, logistic_mod, logistic_mod1)
+  return(logistic_models_coef)
 }
 
+# Assuming 'imp' is a list of data frames
 # Find average logistic coefficients over imputed datasets
-log_coef1<- logistic(trache_imputed[[1]])
-log_coef2<- logistic(trache_imputed[[2]])
-log_coef3<- logistic(trache_imputed[[3]])
-log_coef4<- logistic(trache_imputed[[4]])
-log_coef5<- logistic(trache_imputed[[5]])
+log_coef1<-logistic(imp[[1]])
+log_coef2<- logistic(imp[[2]])
+log_coef3<- logistic(imp[[3]])
+log_coef4<- logistic(imp[[4]])
+log_coef5<- logistic(imp[[5]])
 log_coef_all1<- cbind(log_coef1[[1]], log_coef2[[1]], log_coef3[[1]],log_coef4[[1]], log_coef5[[1]])
 log_coef_all2<- cbind(log_coef1[[2]], log_coef2[[2]], log_coef3[[2]],log_coef4[[2]], log_coef5[[2]])
 #for the model with  main interactions
@@ -393,46 +483,18 @@ var_coefs_log1<- apply(log_coef_all1, 1, var)
 # var_coefs_log2<- apply(log_coef_all2, 1, var)
 
 # Find predicted probabilities on long imputed data (no rounding applied in this case!)
-trach_df_long<- complete(trache_mice,action="long")
-subset_long<- trach_df_long[,-c(1,2,3,32)]
-x_vars_log<- model.matrix(Trach~.,subset_long)
-subset_long$logistic<-x_vars_log%*% avg_coefs_log1
-mod_logistic<- glm(Trach~logistic, data = subset_long, family = "binomial")
+trach_df_long<- complete(mice_mod_36,action="long")
+subset_long1<- trach_df_long[,-c(1,2,3,26)]
+x_vars_log<- model.matrix(Trach~ .,subset_long1)
+avg_coefs_log1[is.na(avg_coefs_log1)] <- 0
+print(avg_coefs_log1)
+subset_long1$logistic_log<-x_vars_log %*% avg_coefs_log1
+mod_logistic<- glm(Trach~logistic_log, data = subset_long1, family = "binomial")
 predict_probs_logistic<- predict(mod_logistic, type="response")
 ```
 
-The logistic_backward function is designed to perform backward stepwise logistic regression on a given dataset. This process involves fitting a logistic regression model with all potential predictor variables and then iteratively removing variables that do not contribute significantly to the model.Firstly, the function removes irrelevant variables then, it creates a matrix of predictor variables and the response variable needed for logistic regression. Two models are fitted: one which represents the full logistic regression model with all potential predictors, and another, which represents the null model with only the intercept. The function then utilizes the step function to perform backward stepwise variable selection. It specifies the direction as 'backward' and uses the AIC criterion to determine the best-fitting model. The results of the variable selection process are stored in the backwardstep object. Finally, the function extracts the coefficients from the selected model (backwardstep) and returns them along with the model object. This allows users to access both the coefficients and the model for further analysis or interpretation.
 
-```{r}
-library(MASS)
-logistic_backward <- function(df)
- {
-   #' Fits logistic model and returns corresponding coefficients 
-   #' @param df, data set
-   #' @return coef, model coefficients
-
-  df<- df[,c(-1,-30)] #remove death
-   # Matrix form for ordered variables
-  #including two-way interactions
-  #x.ord2 <- model.matrix(Trach~.^2, data = train)[,-c(29)] #remove trach
-  #only single terms
-  x.ord <- model.matrix(Trach~., data = df)[,-c(29)]
-  y.ord <- df$Trach
-
-  log_modfull <- glm(y.ord ~ x.ord, family = "binomial")
-   log_modnull <- glm(y.ord ~ 1, family = "binomial")
-
-backwardstep <- step(log_modfull, scope = formula(log_modnull), direction='backward', trace = 0)
-coef <- coef(backwardstep)
-#for one way interactions
-predict_probs_backwardstep<- predict(backwardstep, type="response", newdata = subset_long)
-
-dat <- list(coef, backwardstep)
-return(dat)
-
-}
-```
-## Statistical Analysis
+## Statistical Analysis and Results
 ```{r}
 library(pROC)
 lasso_plot<-ggplot() + 
@@ -445,13 +507,13 @@ roc_mod_lasso<- roc(predictor=predict_probs_lasso,
                levels = c(0,1), direction = "<")
 plot(roc_mod_lasso, print.auc=TRUE, print.thres = TRUE)
 roc_vals_lasso<- coords(roc=roc_mod_lasso, x = "all")
-head(roc_vals_lasso)
+#head(roc_vals_lasso)
 roc_vals_lasso[roc_vals_lasso$sensitivity > 0.75, ] %>% tail(n=1)
 
-pred_ys <- ifelse(predict_probs_lasso > 0.117, 1, 0)
+pred_ys <- ifelse(predict_probs_lasso > 0.139, 1, 0)
 pred_ys <- factor(pred_ys, levels = c("0", "1"))
 tab_outcome <- table(mod_lasso$y, pred_ys)
-tab_outcome
+#tab_outcome
 #sens <- tab_outcome[2,2]/(tab_outcome[2,1]+tab_outcome[2,2])
 #spec <- tab_outcome[1,1]/(tab_outcome[1,1]+tab_outcome[1,2])
 ppv <- tab_outcome[2,2]/(tab_outcome[1,2]+tab_outcome[2,2])
@@ -471,18 +533,70 @@ roc_mod_logistic<- roc(predictor=predict_probs_logistic,
                levels = c(0,1), direction = "<")
 plot(roc_mod_logistic, print.auc=TRUE, print.thres = TRUE)
 roc_vals_logistic<- coords(roc=roc_mod_logistic, x = "all")
-head(roc_vals_logistic)
+#head(roc_vals_logistic)
 roc_vals_logistic[roc_vals_logistic$sensitivity > 0.75, ] %>% tail(n=1)
-pred_ys_log<- ifelse(predict_probs_logistic > 0.289, 1, 0)
+pred_ys_log<- ifelse(predict_probs_logistic > 0.190, 1, 0)
 pred_ys_log<- factor(pred_ys_log, levels = c("0", "1"))
 tab_outcome_log<-table(mod_logistic$y, pred_ys_log)
-tab_outcome_log
+#tab_outcome_log
 #sens <- tab_outcome[2,2]/(tab_outcome[2,1]+tab_outcome[2,2])
 #spec <- tab_outcome[1,1]/(tab_outcome[1,1]+tab_outcome[1,2])
 ppv_log<- tab_outcome_log[2,2]/(tab_outcome_log[1,2]+tab_outcome_log[2,2])
 npv_log<- tab_outcome_log[1,1]/(tab_outcome_log[1,1]+tab_outcome_log[2,1])
 acc_log<- (tab_outcome_log[1,1]+tab_outcome_log[2,2])/sum(tab_outcome_log)
 vals_log<- data.frame(Measures = c("PPV", "NPV", "Acc"), Values = round(c(ppv_log, npv_log, acc_log),3))
+
+
+roc_vals_lass<- pROC::coords(roc=roc_mod_lasso, x = "best")
+roc_vals_log<- pROC::coords(roc=roc_mod_logistic, x = "best")
+library(pROC)
+
+
+
+df_metrics <- data.frame(
+  Metric = c("Sensitivity", "Specificity", "AUC", "Best Threshold"),
+  Lasso = c(
+    roc_vals_lass$sensitivity,
+    roc_vals_lass$specificity,
+    auc(roc_mod_lasso),
+    (roc_vals_lass$threshold)
+  ),
+  Logistic = c(
+    roc_vals_log$sensitivity,
+    roc_vals_log$specificity,
+    auc(roc_mod_logistic),
+    (roc_vals_log$threshold)
+  )
+)
+
+
+df_metrics %>% knitr::kable(caption = "Performance Metrics for Models", digits = 4)
+#TABLES OF COEFFICIENTS
+
+lass1 <- avg_coefs_lasso1  
+log<- avg_coefs_log1
+
+coefficients_df <- data.frame(
+  Lasso = c(lass1, rep(NA, max(length(lass1), length(log)))),
+  Logistic = c(log, rep(NA, max(length(lass1), length(log))))
+)
+
+coefficients_df <- round(coefficients_df[1:length(log),], 2)
+
+# Print the coefficients table
+coefficients_df %>% knitr::kable(caption = "Coefficient Estimates for Models")
+
+# Create a data frame with zero coefficients count
+df2 <- coefficients_df %>%
+  summarise_all(~sum(. == 0))
+
+# Print the zero coefficients table
+table0<- df2 %>%
+  knitr::kable(col.names = c("Lasso", "Logistic"), caption = "Zero Coefficients for Models")%>%
+  kable_styling(latex_options = c("striped"), full_width = FALSE)
+table0
+
+
 
 
 # bckwd_plot<-ggplot() +
@@ -510,11 +624,15 @@ vals_log<- data.frame(Measures = c("PPV", "NPV", "Acc"), Values = round(c(ppv_lo
 
 ```
 
-In summary, the Logistic Regression model with an AUC of 0.925 is considered better than the Lasso model with an AUC of 0.705. A higher AUC indicates that the Logistic Regression model has a better ability to distinguish between positive and negative instances.In addition a higher AUC value is generally associated with improved predictive performance. It suggests that the Logistic Regression model has a better balance between sensitivity and specificity, making it more reliable in making accurate predictions across different thresholds.The AUC summarizes the model's performance across various classification thresholds, providing a comprehensive view of its ability to trade off true positive rate and false positive rate. The higher AUC for Logistic Regression indicates a better performance across a range of decision thresholds compared to Lasso.
+In summary, the Logistic Regression model with an AUC of 0.887 is considered better than the Lasso model with an AUC of 0.570. A higher AUC indicates that the Logistic Regression model has a better ability to distinguish between positive and negative instances.In addition a higher AUC value is generally associated with improved predictive performance. It suggests that the Logistic Regression model has a better balance between sensitivity and specificity, making it more reliable in making accurate predictions across different thresholds.The AUC summarizes the model's performance across various classification thresholds, providing a comprehensive view of its ability to trade off true positive rate and false positive rate. The higher AUC for Logistic Regression indicates a better performance across a range of decision thresholds compared to Lasso.
 
 
 The Precision (PPV): The Logistic Regression model outperforms the Lasso model significantly in terms of Precision, indicating a higher proportion of true positive predictions among the positive predictions made by the model. The Negative Predictive Value (NPV): The Logistic Regression model also exhibits a higher Negative Predictive Value, indicating a better ability to correctly identify true negatives among the total negative predictions.Accuracy (Acc): The Logistic Regression model again demonstrates superior performance in terms of overall Accuracy, suggesting a higher proportion of correct predictions compared to the Lasso model.
 
+
+In evaluating the performance metrics of the two models, Logistic regression emerges as the superior choice for predicting tracheostomy placement in infants with Bronchopulmonary Dysplasia. The Logistic model exhibited notable strengths across key metrics compared to the Lasso model. With a higher sensitivity of 0.8370, the Logistic model demonstrated a superior ability to correctly identify positive cases. Additionally, the Logistic model displayed a substantially higher specificity of 0.8155, indicating enhanced accuracy in predicting true negative cases. The Area Under the Curve (AUC), a comprehensive measure of discriminatory ability, further favored the Logistic model with a higher value of 0.8874 compared to the Lasso model's 0.5703. While both models had similar threshold values, the combination of superior sensitivity and specificity positions the Logistic regression model as the more effective and reliable choice for predicting tracheostomy placement in this specific medical context.
+
+From coefficients table we can observe large differences between the estimated coefficients across both models. Most of the non-zero coefficients for the model came from the Lasso model. Analyzing the coefficients table reveals substantial disparities in the estimated coefficients between the two models, with a notable observation of distinctive patterns. The Lasso regression model predominantly contributes to the identification of non-zero coefficients, showcasing a more extensive utilization of predictors in the model formulation. This implies that the Lasso model retains a larger set of features with non-zero coefficients, suggesting a broader inclusion of variables in its predictive framework. In contrast, the Logistic regression model, while likely incorporating fewer predictors with non-zero coefficients, emphasizes a more selective and refined set of variables.
 
 ## Discussion
 The comparison between the Lasso and Logistic Regression models reveals compelling evidence supporting the superiority of the Logistic Regression model in predicting the outcome of interest of what regression would be best to help predict the time of the tracesotomy placement for infants. Several key performance metrics and the Area Under the Receiver Operating Characteristic curve (AUC-ROC) were evaluated to assess the models' effectiveness. In real-world scenarios, such as clinical settings or decision-making processes, where accurate predictions are critical, the Logistic Regression model's reliability in distinguishing between positive and negative instances positions it as a valuable tool. The interpretability of Logistic Regression coefficients further facilitates the translation of model insights into actionable knowledge, contributing to its generalizability and practical utility in addressing similar classification tasks across diverse contexts. As with any predictive model, ongoing validation and testing on new data will be essential to ensure its continued effectiveness in real-world applications.
@@ -523,7 +641,7 @@ The comparison between the Lasso and Logistic Regression models reveals compelli
 
 The analysis and study of tracheostomy placement for infants faces several limitations that impact the comprehensiveness of its findings. One notable constraint is the absence of precise information regarding the timing of tracheostomy placement, hindering timelines critical for clinical decision-making. This limitation obscures potential insights into developmental stages where tracheostomies might be most efficacious. Another limitation arises from the exclusion of infants with genetic anomalies, particularly heart disease, a significant contributor to infant mortality. By not considering this subset, the study might overlook essential factors influencing both the occurrence of tracheostomy placement and broader health outcomes.
 
-Furthermore,there is a methodological limitation due to the lack of separation in the analysis between 36 and 44 weeks, preventing identification of developmental changes and/or patterns during these gestational periods. This can obscure fine differences in predictive variables and tracheostomy outcomes at distinct gestational ages. Additionally, the focus on tracheostomy placement, neglecting death due to other causes, represents a further limitation. The study may fail to capture the broader spectrum of mortality risks, hindering intervention strategies for infants in a specific population. Incorporating a broader consideration of mortality data would enhance the study's utility and provide a more holistic perspective on the complexities surrounding both tracheostomy placement and mortality in infants.
+Furthermore,there is a methodological limitation due to the lack of separation in the analysis between 36 and 44 weeks, preventing identification of developmental changes and/or patterns during these gestational periods. This can obscure fine differences in predictive variables and tracheostomy outcomes at distinct gestational ages. The study may fail to capture the broader spectrum of mortality risks, hindering intervention strategies for infants in a specific population. Incorporating a broader consideration of mortality data would enhance the study's utility and provide a more holistic perspective on the complexities surrounding both tracheostomy placement and mortality in infants.
 
 ## References:
 "Predicting the need for tracheostomy in infants with severe bronchopulmonarydysplasia"

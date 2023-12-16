@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.10.10)  13 NOV 2023 00:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.10.10)  16 DEC 2023 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,7 +628,7 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 12
-7.
+8.
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -648,42 +648,45 @@ LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
 LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
 
 
-LaTeX Warning: Label `tab:unnamed-chunk-4' multiply defined.
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
+
+
+LaTeX Warning: Label `tab:unnamed-chunk-11' multiply defined.
 
 )
 \openout1 = `PHP2550_Project2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Info: Redefining \microtypecontext on input line 127.
-Package microtype Info: Applying patch `item' on input line 127.
-Package microtype Info: Applying patch `toc' on input line 127.
-Package microtype Info: Applying patch `eqnum' on input line 127.
-Package microtype Info: Applying patch `footnote' on input line 127.
-Package microtype Info: Applying patch `verbatim' on input line 127.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Info: Redefining \microtypecontext on input line 128.
+Package microtype Info: Applying patch `item' on input line 128.
+Package microtype Info: Applying patch `toc' on input line 128.
+Package microtype Info: Applying patch `eqnum' on input line 128.
+Package microtype Info: Applying patch `footnote' on input line 128.
+Package microtype Info: Applying patch `verbatim' on input line 128.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 127.
+LaTeX Info: Redefining \showhyphens on input line 128.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -752,34 +755,34 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 127.
+Package hyperref Info: Link coloring OFF on input line 128.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-29.
+30.
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-29.
+30.
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-129.
+130.
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-129.
+130.
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 129.
+(Font)              <12> on input line 130.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 129.
+(Font)              <8> on input line 130.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 129.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 129
+(Font)              <6> on input line 130.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 130
 .
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -788,7 +791,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 129
+LaTeX Font Info:    Trying to load font information for U+msb on input line 130
 .
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -799,124 +802,590 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
 {C:/Users/CAU Student/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-56.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 276.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 276.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 276.
+[2] [3]
+Overfull \hbox (33.44519pt too wide) in paragraph at lines 507--548
+ [][] 
+ []
+
+
+Overfull \hbox (88.00264pt too wide) in paragraph at lines 554--601
+ [][] 
+ []
+
+
+Overfull \hbox (71.19644pt too wide) in paragraph at lines 607--686
+ [][] 
+ []
+
+<PHP2550_Project2_files/figure-latex/unnamed-chunk-5-1.pdf, id=30, 469.755pt x 
+325.215pt>
+File: PHP2550_Project2_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (t
+ype pdf)
+<use PHP2550_Project2_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-5-1.
+pdf  used on input line 688.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<PHP2550_Project2_files/figure-latex/unnamed-chunk-5-2.pdf, id=31, 469.755pt x 
+325.215pt>
+File: PHP2550_Project2_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (t
+ype pdf)
+<use PHP2550_Project2_files/figure-latex/unnamed-chunk-5-2.pdf>
+Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-5-2.
+pdf  used on input line 689.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+<PHP2550_Project2_files/figure-latex/unnamed-chunk-6-1.pdf, id=32, 469.755pt x 
+325.215pt>
+File: PHP2550_Project2_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (t
+ype pdf)
+<use PHP2550_Project2_files/figure-latex/unnamed-chunk-6-1.pdf>
+Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-6-1.
+pdf  used on input line 690.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 688--691
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 688--691
+[]
+ []
+
+[4] [5] [6 <./PHP2550_Project2_files/figure-latex/unnamed-chunk-5-1.pdf>] [7]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 775.
+[8 <./PHP2550_Project2_files/figure-latex/unnamed-chunk-5-2.pdf>] [9 <./PHP2550
+_Project2_files/figure-latex/unnamed-chunk-6-1.pdf>] [10] [11]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
+53.
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [2] [3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 362.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 362.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 362.
-
-Overfull \hbox (33.44519pt too wide) in paragraph at lines 498--539
- [][] 
- []
-
-
-Overfull \hbox (88.00264pt too wide) in paragraph at lines 545--592
- [][] 
- []
-
-
-Overfull \hbox (134.19585pt too wide) in paragraph at lines 598--623
- [][] 
- []
-
-
-Overfull \hbox (71.19644pt too wide) in paragraph at lines 629--708
- [][] 
- []
-
-[4] [5] [6] [7] [8]
-<PHP2550_Project2_files/figure-latex/unnamed-chunk-9-1.pdf, id=57, 469.755pt x 
-325.215pt>
-File: PHP2550_Project2_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (t
-ype pdf)
-<use PHP2550_Project2_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-9-1.
-pdf  used on input line 840.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[9]
-<PHP2550_Project2_files/figure-latex/unnamed-chunk-9-2.pdf, id=67, 469.755pt x 
-325.215pt>
-File: PHP2550_Project2_files/figure-latex/unnamed-chunk-9-2.pdf Graphic file (t
-ype pdf)
-<use PHP2550_Project2_files/figure-latex/unnamed-chunk-9-2.pdf>
-Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-9-2.
-pdf  used on input line 864.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[10 <./PHP2550_Project2_files/figure-latex/unnamed-chunk-9-1.pdf>] [11 <./PHP25
-50_Project2_files/figure-latex/unnamed-chunk-9-2.pdf>] [12]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 975.
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-1022.
-(C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \vbox (badness 10000) detected at line 1400
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   1   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   1   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   1   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   1   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   1   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   2   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   2   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   2   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   2   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   2   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   3   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   3   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   3   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   3   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   3   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   4   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   4   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   4   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   4   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   4   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   5   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   5   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   5   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   5   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
+[]\T1/lmtt/m/n/10 ##   5   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
+  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   1   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   1   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   1   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   1   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   1   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   2   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   2   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+[12]
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   2   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   2   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   2   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   3   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   3   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   3   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   3   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   3   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   4   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   4   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   4   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   4   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   4   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   5   1  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   5   2  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   5   3  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   5   4  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
+ []
+
+
+Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
+[]\T1/lmtt/m/n/10 ##   5   5  center  mat_race  mat_ethn  blength  birth_hc  de
+l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
+ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
+_cm_h2o_modified.36  med_ph.36  Death  severity[] 
  []
 
 [13]
-Underfull \vbox (badness 10000) detected at line 1400
- []
-
-
-Underfull \vbox (badness 10000) detected at line 1400
- []
-
+<PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf, id=114, 469.755pt 
+x 325.215pt>
+File: PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (
+type pdf)
+<use PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1
+.pdf  used on input line 1025.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [14]
-Underfull \vbox (badness 10000) detected at line 1400
+<PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf, id=120, 469.755pt 
+x 325.215pt>
+File: PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf Graphic file (
+type pdf)
+<use PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf>
+Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2
+.pdf  used on input line 1032.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[15 <./PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf>] [16 <./PHP2
+550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf>] [17] [18] [19]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1262.
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+1311.
+(C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+[20]
+Underfull \vbox (badness 10000) detected at line 1787
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1400
+Underfull \vbox (badness 10000) detected at line 1787
  []
 
-[15]
-Underfull \vbox (badness 10000) detected at line 1400
- []
-
-
-Underfull \vbox (badness 10000) detected at line 1400
- []
-
-[16]
-Underfull \vbox (badness 10000) detected at line 1400
+[21]
+Underfull \vbox (badness 10000) detected at line 1787
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1400
+Underfull \vbox (badness 10000) detected at line 1787
  []
 
-[17]
-Underfull \vbox (badness 10000) detected at line 1400
- []
-
-
-Underfull \vbox (badness 10000) detected at line 1400
- []
-
-[18]
-Underfull \vbox (badness 10000) detected at line 1400
+[22]
+Underfull \vbox (badness 10000) detected at line 1787
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1400
+Underfull \vbox (badness 10000) detected at line 1787
  []
 
-[19]
-Underfull \vbox (badness 10000) detected at line 1400
+[23]
+Underfull \vbox (badness 10000) detected at line 1787
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1400
+Underfull \vbox (badness 10000) detected at line 1787
  []
 
-[20] [21] (PHP2550_Project2.aux)
+[24]
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+[25]
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+[26]
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+[27]
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1787
+ []
+
+[28] [29] (PHP2550_Project2.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -926,27 +1395,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15654 strings out of 475246
- 249538 string characters out of 5754924
- 1969785 words of memory out of 5000000
- 36726 multiletter control sequences out of 15000+600000
- 610778 words of font info for 140 fonts, out of 8000000 for 9000
+ 15736 strings out of 475246
+ 251712 string characters out of 5754924
+ 2009785 words of memory out of 5000000
+ 36770 multiletter control sequences out of 15000+600000
+ 624637 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,9n,81p,1015b,668s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,14n,81p,1015b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1
 .enc}{C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
 ec.enc}<C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
 m/lmbx10.pfb><C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/lm/lmbx12.pfb><C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/lm/lmr10.pfb><C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/lm/lmr12.pfb><C:/Users/CAU Student/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/lm/lmr17.pfb><C:/Users/CAU Student/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/CAU Student/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/CAU Student/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on PHP2550_Project2.pdf (21 pages, 319823 bytes).
+pe1/public/lm/lmbx9.pfb><C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/lm/lmr10.pfb><C:/Users/CAU Student/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/lm/lmr12.pfb><C:/Users/CAU Student/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/CAU Student/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/CAU Student/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/CAU Student/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/CAU Student/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/CAU Studen
+t/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
+Output written on PHP2550_Project2.pdf (29 pages, 1013091 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 26715 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 307 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 34922 words of extra memory for PDF output out of 35830 (max. 10000000)
 
