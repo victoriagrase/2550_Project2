@@ -242,11 +242,6 @@ plt2<-ggpairs(project2 %>% select(weight_today.36,weight_today.44,p_delta.36,p_d
 lower = list(continuous = wrap("smooth", alpha = 0.7, size=0.5)))+
 theme_bw()
 plt2
-
-
-
-
-
 ```
 ```{r}
 project2$center[project2$center == 21] = 20
@@ -290,7 +285,7 @@ Initially, a carefully chosen subset of variables essential for the analysis is 
 
 Afterwards, the imputation process focuses on the 36-week data, where each variable exhibits less than 20% missing values. To enhance reproducibility, a random seed is set. The imputed datasets are stored in a list for further analysis, and the mice::complete function is utilized to obtain the completed datasets for each imputation iteration. A visual representation of the imputed datasets is presented through a plot, offering insights into the distribution and patterns of imputed values. The imputation methods used are documented and can be inspected through the imp$method attribute. Ultimately, the imputed datasets are consolidated into a dataframe named "completed_data" using the complete function. This step aggregates the imputed values into a single dataset, ensuring readiness for subsequent analyses. The imputation process plays a crucial role in fortifying the dataset's completeness and reliability, laying a strong foundation for subsequent regression analyses, specifically lasso and logistic regression models.
 
-```{r}
+```{r,echo=FALSE}
 # Select variables and rename
 # project2<- project2 %>% select(c(center,bw,ga,blength,birth_hc,del_method,prenat_ster,com_prenat_ster,mat_chorio,gender,sga,any_surf,weight_today.36,ventilation_support_level.36,inspired_oxygen.36,p_delta.36,peep_cm_h2o_modified.36, med_ph.36,weight_today.44, ventilation_support_level_modified.44,inspired_oxygen.44,p_delta.44,peep_cm_h2o_modified.44,med_ph.44,hosp_dc_ga,Trach))
 #Create imputation for variables at 44 weeks including weight, Fraction of Inspired Oxygen,Peak Inspiratory Pressur, Positive end exploratory pressure, 
@@ -334,7 +329,7 @@ wk36<-  project2 %>% dplyr::select(-c(wk44,mother_ethn,mother_race,hosp_dc_ga))
 project2 <- project2[na_count_per_row != ncol(week44vars), ]
 ```
 
-```{r}
+```{r,include= FALSE}
 mice_mod<- mice(project2, m = 5, meth = 'pmm', seed = 123)
 mice_mod_36<- mice(wk36, m = 5, meth = 'pmm', seed = 123)
 
@@ -351,14 +346,13 @@ for (i in 1:5){
   imp = complete(mice_mod_36,i)
   data_36[[i]] = cbind(imp)
 }
-
 ```
 ### Model Descriptions
 The incorporation of the Lasso regularization in logistic regression adds a layer of sophistication to the modeling process. The Lasso's ability to induce sparsity in the model is particularly valuable in scenarios with a multitude of potential predictors. In the context of predicting tracheostomy placement, where various clinical, demographic, and physiological factors may influence the outcome, the Lasso helps in automatic variable selection. By shrinking some coefficients to exactly zero, it identifies the most influential predictors while disregarding less significant ones. This not only streamlines the model but also enhances its interpretability, providing clinicians with a focused set of factors that contribute significantly to the likelihood of tracheostomy placement in infants with BPD. Additionally, the Lasso's regularization properties aid in preventing overfitting, improving the model's generalizability to new data and making it a robust tool for predicting clinical outcomes in this medical context.
 
 The lasso model performs a 10-fold cross-validated lasso logistic regression. This function takes a dataset (df) as input and returns a list of lasso coefficients for two models: one without interactions and another with main interactions. Cross-validation to select the optimal regularization parameter (lambda) is included in this process. The dataset is preprocessed by removing the "death" variable and creating matrix forms for ordered and non-ordered variables.The code applies the function to five imputed datasets, obtaining lasso coefficients for both models (resulting coefficients are combined into two matrices). The average and variance of these coefficients are then calculated for each model.Finally, the code uses the obtained average coefficients to calculate lasso scores on a long-format imputed dataset. It then fits logistic regression models using the lasso scores and predicts probabilities for tracheostomy outcomes. The commented-out section provides an additional step for two-way interactions, which can be activated based on the analysis requirements.
 
-```{r}
+```{r,echo = FALSE}
 lasso <- function(df) {
   #Runs 10-fold CV for lasso and returns corresponding coefficients
   #@param df, data set
@@ -442,7 +436,7 @@ The logistic function, commonly known as the sigmoid function, is the fundamenta
 The function first preprocesses the data by removing any irrelevant variables, specifically excluding the variable representing death. It then generates a model matrix from the data, considering linear predictors. The logistic regression models are fitted using the glm  function with a binomial family. The coefficients of these models are extracted to understand the influence of the predictor variables on the probability of the binary outcome.The function returns a list containing the coefficients of both models and the fitted models themselves. This process is repeated for each imputed dataset, resulting in separate sets of coefficients for each dataset. The average coefficients and their variances are then calculated for a model with main interactions. Finally, the function applies the average coefficients to the long-format imputed data. The logistic model is then used to predict probabilities for the binary outcome.
 
 
-```{r}
+```{r,echo = FALSE}
 #Binomial logistic regression
 logistic <- function(df) {
   # Assuming 'imp' is a data frame with columns, and you want to use 'df' instead of 'imp'
@@ -487,7 +481,6 @@ trach_df_long<- complete(mice_mod_36,action="long")
 subset_long1<- trach_df_long[,-c(1,2,3,26)]
 x_vars_log<- model.matrix(Trach~ .,subset_long1)
 avg_coefs_log1[is.na(avg_coefs_log1)] <- 0
-print(avg_coefs_log1)
 subset_long1$logistic_log<-x_vars_log %*% avg_coefs_log1
 mod_logistic<- glm(Trach~logistic_log, data = subset_long1, family = "binomial")
 predict_probs_logistic<- predict(mod_logistic, type="response")

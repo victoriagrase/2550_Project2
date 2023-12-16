@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.10.10)  16 DEC 2023 11:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.10.10)  16 DEC 2023 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -861,531 +861,105 @@ Underfull \hbox (badness 10000) in paragraph at lines 688--691
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 775.
 [8 <./PHP2550_Project2_files/figure-latex/unnamed-chunk-5-2.pdf>] [9 <./PHP2550
-_Project2_files/figure-latex/unnamed-chunk-6-1.pdf>] [10] [11]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-53.
-(C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   1   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   1   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   1   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   1   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   1   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   2   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   2   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   2   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   2   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   2   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   3   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   3   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   3   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   3   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   3   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   4   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   4   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   4   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   4   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   4   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   5   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   5   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   5   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   5   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (1341.48972pt too wide) in paragraph at lines 881--881
-[]\T1/lmtt/m/n/10 ##   5   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  weight_today.44  inspired_oxygen.44  p_delta.44
-  peep_cm_h2o_modified.44  hosp_dc_ga  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   1   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   1   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   1   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   1   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   1   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   2   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   2   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-[12]
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   2   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   2   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   2   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   3   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   3   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   3   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   3   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   3   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   4   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   4   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   4   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   4   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   4   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   5   1  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   5   2  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   5   3  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   5   4  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-
-Overfull \hbox (926.74092pt too wide) in paragraph at lines 911--911
-[]\T1/lmtt/m/n/10 ##   5   5  center  mat_race  mat_ethn  blength  birth_hc  de
-l_method  prenat_ster  com_prenat_ster  mat_chorio  gender  sga  any_surf  weig
-ht_today.36  ventilation_support_level.36  inspired_oxygen.36  p_delta.36  peep
-_cm_h2o_modified.36  med_ph.36  Death  severity[] 
- []
-
-[13]
-<PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf, id=114, 469.755pt 
+_Project2_files/figure-latex/unnamed-chunk-6-1.pdf>] [10] [11] [12]
+<PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf, id=108, 469.755pt 
 x 325.215pt>
 File: PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (
 type pdf)
 <use PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf>
 Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1
-.pdf  used on input line 1025.
+.pdf  used on input line 930.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[14]
-<PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf, id=120, 469.755pt 
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
+32.
+(C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf, id=109, 469.755pt 
 x 325.215pt>
 File: PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf Graphic file (
 type pdf)
 <use PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf>
 Package pdftex.def Info: PHP2550_Project2_files/figure-latex/unnamed-chunk-11-2
-.pdf  used on input line 1032.
+.pdf  used on input line 937.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[15 <./PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf>] [16 <./PHP2
-550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf>] [17] [18] [19]
+[13 <./PHP2550_Project2_files/figure-latex/unnamed-chunk-11-1.pdf>] [14 <./PHP2
+550_Project2_files/figure-latex/unnamed-chunk-11-2.pdf>] [15] [16] [17]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1262.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1167.
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-1311.
+1216.
 (C:\Users\CAU Student\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
+ []
+
+[18]
+Underfull \vbox (badness 10000) detected at line 1685
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1685
+ []
+
+[19]
+Underfull \vbox (badness 10000) detected at line 1685
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 [20]
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 [21]
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 [22]
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 [23]
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 [24]
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 [25]
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1787
+Underfull \vbox (badness 10000) detected at line 1685
  []
 
-[26]
-Underfull \vbox (badness 10000) detected at line 1787
- []
-
-
-Underfull \vbox (badness 10000) detected at line 1787
- []
-
-[27]
-Underfull \vbox (badness 10000) detected at line 1787
- []
-
-
-Underfull \vbox (badness 10000) detected at line 1787
- []
-
-[28] [29] (PHP2550_Project2.aux)
+[26] [27] (PHP2550_Project2.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1395,13 +969,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15736 strings out of 475246
- 251712 string characters out of 5754924
+ 15734 strings out of 475246
+ 251698 string characters out of 5754924
  2009785 words of memory out of 5000000
  36770 multiletter control sequences out of 15000+600000
  624637 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,14n,81p,1015b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,14n,81p,1015b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1
 .enc}{C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
 ec.enc}<C:/Users/CAU Student/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
@@ -1416,9 +990,9 @@ Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/CAU Student/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/CAU Student/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/CAU Studen
 t/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on PHP2550_Project2.pdf (29 pages, 1013091 bytes).
+Output written on PHP2550_Project2.pdf (27 pages, 1010235 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
  34922 words of extra memory for PDF output out of 35830 (max. 10000000)
 
